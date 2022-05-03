@@ -40,3 +40,13 @@ CMD ["/docker-gs-ping"]
 # To publish a port for our container, we’ll use the --publish flag (-p for short) on the docker run command. The format of the --publish command is [host_port]:[container_port]. 
 # So if we wanted to expose port 8080 inside the container to port 3000 outside the container, we would pass 3000:8080 to the --publish flag.
 # docker run --publish 8080:8080 docker-gs-ping
+
+# REMOVE IMAGE:
+# docker images -a --> To list all images.
+# docker rmi <your-image-id> - To remove a specific image.
+# docker rmi <your-image-id> <your-image-id> ... --> To remove multiple images.
+# docker rmi $(docker images -q) --> To remove all images at once.
+
+
+
+
